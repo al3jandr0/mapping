@@ -216,3 +216,23 @@ Would union_all <- combines all points
 What's their resolution?
 Plot them and see 
 
+# March 13th 2025
+
+A couple developments.
+
+One. I started using Claude 3.7 for inspiration of how compute the center of 3 triangles that touch in 3 points.
+Its answers were really good. It printed code that work, it explained what the code did.
+At first it did not generated 3 trianges that shared 3 points, they only shared two. But after clarifying that it generated desirable code.
+Also I manulaly specified the input paramteters and theirs types this was with the inted of reducing scope. 
+
+It first gave me an implementation using numpy. Numpy seemd unnecessary, so I asked for an implementation without it and it did.
+
+What I find most useful about Claude is that it solves one of the biggest problems of Python for me. 
+Python is dynamicly typed, so there is no auto-complete or no sugestions or insigned of the structures and contents of objects. 
+you see, with statically typed languages you can leverage the language server to explore the methods and functions availabe in scope or at an object. Python doesnt have that. In this sense, writing python feels like coding before the 2010s, with a user manual open next to my computer or the API docs.  
+
+Claude changed my workflow in the following way. I ask it to code something within some constraints, and it shows me custom implementations / examples on how to do it. I then can read about the methods or functions it uses. Before it was the other way around. I would read about the what was availbale, then put together an implementation. This saves me time.
+
+Two. Claude not only wrote code. But it hinted at what kind of problem Im trying to solve. It happens what I called Triagulation is a wall known problem called Descartes theorem or soddy circles. This is very helpul!.
+
+Now im reading about the theorem, and I should be able to come up with a general solution wbacke dby a proven theorem instead of guessing.
